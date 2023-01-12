@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <script src="./nodos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./scripts.js"></script>
+    <title>Mi pagina web</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="header">
+        <h1>San Jose</h1>
+      </div>
+      <div class="sidebar">
+        <span>Clientes</span>
+        <span>Estética</span>
+        <span>Inventario</span>
+        <span>Punto de venta</span>
+        <span>Usuarios</span>
+      </div>
+      <div class="content">
+        <img class="fondo" alt="imagen de fondo" src="./sanjose-removebg-preview.png" />
+        <h1>Perfil de Mascota</h1>
+        <div class="linea"></div>
+        <div class="info">
+          <img alt="foto de michi" src="michi.jpeg" />
+          <div class="datos">
+            <h5>Michi</h5>
+            <h6>Gato</h6>
+            <h6>Felino</h6>
+            <span>06/06/2017</span>
+            <span>23kg</span>
+          </div>
+          <span>17440741</span>
+        </div>
+        <div class="tabs">
+          <span id="selected">consultas</span>
+          <span>Estetica</span>
+          <span>Estudios</span>
+          <span>Cirugias</span>
+          <span>Parasitos</span>
+          <span>Vacunas</span>
+        </div>
+        <div onkeydown="buscar(event)" class="input">
+          <input type="text" />
+          <img alt="lupa icon" src="./lupa.png" />
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Descripción</th>
+              <th>Costo</th>
+              <th>Tratamiento</th>
+              <th>Fecha</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Perrito enfermito</td>
+              <td>$200.00</td>
+              <td>una sobadita de panza</td>
+              <td>19/01/2022</td>
+            </tr>
+            <tr>
+              <td>Perrito enfermito</td>
+              <td>$200.00</td>
+              <td>una sobadita de panza</td>
+              <td>19/01/2022</td>
+            </tr>
+            <tr>
+              <td>Perrito enfermito</td>
+              <td>$200.00</td>
+              <td>una sobadita de panza</td>
+              <td>19/01/2022</td>
+            </tr>
+            <tr>
+              <td>Perrito enfermito</td>
+              <td>$200.00</td>
+              <td>una sobadita de panza</td>
+              <td>19/01/2022</td>
+            </tr>
+            <tr>
+              <td>Perrito enfermito</td>
+              <td>$200.00</td>
+              <td>una sobadita de panza</td>
+              <td>19/01/2022</td>
+            </tr>
+            <tr>
+              <td>Perrito enfermito</td>
+              <td>$200.00</td>
+              <td>una sobadita de panza</td>
+              <td>19/01/2022</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+     
+    </div>
+  </body>
+</html>
+
+<!-- 
+<div class="paquetes">
+  <div class="paquete">
+    <div class="title">Baño + Corte</div>
+    <div class="description">Perro Chico</div>
+    <div class="footer">$250</div>
+  </div>
+  <div class="paquete">
+    <div class="title">Baño + Corte</div>
+    <div class="description">Perro Mediano</div>
+    <div class="footer">$280</div>
+  </div>
+  <div class="paquete">
+    <div class="title">Baño</div>
+    <div class="description">Perro Grande</div>
+    <div class="footer">$100</div>
+  </div>
+  <div class="add">
+    +
+  </div>
+  
+</div> -->

@@ -1,5 +1,5 @@
 class Nodo {
-  constructor(valor, menor = null, mayor = null) {
+  constructor(valor = null, menor = null, mayor = null) {
     this.valor = valor;
     this.menor = menor;
     this.mayor = mayor;
@@ -12,6 +12,16 @@ class Nodo {
     console.log(this.valor);
     if (this.mayor !== null) {
       this.mayor.recorrerAscendente();
+    }
+  }
+
+  recorrerDescendente() {
+    if (this.mayor !== null) {
+      this.mayor.recorrerDescendente();
+    }
+    console.log(this.valor);
+    if (this.menor !== null) {
+      this.menor.recorrerDescendente();
     }
   }
 
@@ -31,15 +41,26 @@ class Nodo {
   }
 
   rellenar(arreglo) {
-    for (let i = 1; i < arreglo.length; i++) {
+    for (let i = 0; i < arreglo.length; i++) {
       let numero = arreglo[i];
-      this.ingresarHijo(numero);
+      if (this.valor === null) {
+        this.valor = numero;
+      } else {
+        this.ingresarHijo(numero);
+      }
     }
   }
 }
 
 const arreglo = [10, 2, 45, 33, 21, 13, 1, 50, 47, 99, 3];
 
-const raiz = new Nodo(arreglo[0]);
+const raiz = new Nodo();
 raiz.rellenar(arreglo);
-raiz.recorrerAscendente();
+
+console.log("hola mundo")
+
+const recorrer_asc = () => {
+  raiz.recorrerAscendente();
+};
+
+//raiz.recorrerDescendente();
